@@ -1,0 +1,67 @@
+.parent {
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: row;
+  .sideNav {
+    background-color: $hr_background;
+    color: white !important;
+    width: 250px;
+    height: 639px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    margin-left: 0px;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.linkview {
+  background-color: white;
+  color: black;
+  margin: 5px;
+  height: 638px;
+  width: 1250px;
+}
+.management-item {
+  color: $hr_accent;
+  display: flex;
+  align-items: center;
+  padding: 10px 0px 10px 2px;
+  font-size: medium;
+  cursor: pointer;
+  border: 1px solid $hr_accent;
+}
+.management-item:hover {
+  color: white;
+  border-left: 4px solid transparentize($color: $hr_accent, $amount: 1);
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 55px;
+  width: inherit;
+  border: 4px solid lightgrey;
+  .input-field {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .label {
+    align-items: center;
+  }
+  input[type="text"] {
+    box-sizing: border-box;
+  }
+  option {
+    padding: 10px 15px;
+  }
+  .button {
+    background-color: $hr_accent;
+    padding: 5px 15px;
+    border-radius: 10%;
+    border: 2px solid $hr_accent;
+  }
+}

@@ -1,0 +1,26 @@
+.menu {
+  padding: 3.5% 2% 0%;
+  .menu-bar {
+    .menu-container {
+      display: flex;
+      justify-content: space-between;
+      a {
+        text-decoration: none;
+      }
+      .menu-item {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 5%;
+        color: black;
+        .item-name {
+          cursor: pointer;
+        }
+        &:hover {
+          color: $hr_accent;
+          border-bottom: 4px sloid
+            transparentize($color: $hr_accent, $amount: 0.66);
+        }
+      }
+    }
+  }
+}

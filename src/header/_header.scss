@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  background: $hr_background;
+  width: 100%;
+  height: 7%;
+  .header-first {
+    flex-basis: 15%;
+    flex-wrap: wrap;
+    margin-top: -0.75%;
+    color: $hr_white;
+    background: #220438;
+    .header-text {
+      margin-left: 20%;
+      font-size: 1.25em;
+      font-weight: 400;
+    }
+    .header-paragraph {
+      margin-left: 24%;
+      font-size: 0.5em;
+      margin-top: -10%;
+    }
+  }
+  .header-second {
+    margin-left: 80%;
+    margin-top: -0.5%;
+    cursor: pointer;
+    .logout {
+      color: $hr_white;
+      font-weight: 300;
+    }
+  }
+}
